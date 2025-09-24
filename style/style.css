@@ -1,0 +1,130 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.roboto-font {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100; 
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600px;
+  font-style: initial;
+}
+
+
+
+
+/* Share Style */
+
+.display-flex{
+    display: flex;
+}
+
+.btn-primary{
+    width: 195px;
+    height: 54px;
+    border-radius: 47px;
+    border-color: 2px solid var(--color02);
+}
+
+
+:root{
+    /* Color Section */
+    --color01: rgba(95, 111, 255, 1);
+    --color02: rgba(255, 255, 255, 1);
+    --color03: rgba(89, 89, 89, 1);
+
+
+
+}
+
+/* Navbar */
+
+.header{
+    justify-content: space-around;
+    align-items: center;
+    width: 1500px;
+}
+.header > img {
+    width: 130px;
+    
+}
+ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr) ;
+    gap:50px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;  
+}
+
+/* hero-section */
+
+.hero-section{
+    display:flex ;
+
+    width: 1400px;
+    height: 698PX;
+    background-color: var(--color01) ;
+    border-radius: 12px;
+    margin: auto auto;
+}
+.hero-content{
+    display: grid;
+    padding-top: 160px;
+    padding-left: 93px;
+    grid-template-columns: 140px 400px;
+    grid-template-rows: 300px 90px 80px;
+}
+
+
+.hero-tittle{
+    color: var(--color02);
+    justify-items: center;
+    font-size: 70px;
+    width: 700px;
+    height: 150px;
+    display: grid;
+    grid-column-end: span 2;
+    grid-template-columns: auto 10px;
+}
+
+.hero-description{
+    color: var(--color02);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    
+    margin: 10px 0px 0px 0px;
+}
+
+.hero-img{
+    width: 130px;
+    height: 55px;
+}
+.header-image{
+    margin-top: 103px;
+}
+
+/* Small Card Section  */
+.Speciality-content{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-card{
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    
+}
+
