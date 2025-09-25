@@ -1,13 +1,17 @@
-/* font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/**
+ * font
+ *
+ * @format
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 .roboto-font {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100; 
+  font-variation-settings: "wdth" 100;
 }
 
 .inter-font {
@@ -17,114 +21,166 @@
   font-style: initial;
 }
 
-
-
-
 /* Share Style */
 
-.display-flex{
-    display: flex;
+.display-flex {
+  display: flex;
 }
 
-.btn-primary{
-    width: 195px;
-    height: 54px;
-    border-radius: 47px;
-    border-color: 2px solid var(--color02);
+.btn-primary {
+  width: 195px;
+  height: 54px;
+  border-radius: 47px;
+  border-color: 2px solid var(--color02);
 }
 
-
-:root{
-    /* Color Section */
-    --color01: rgba(95, 111, 255, 1);
-    --color02: rgba(255, 255, 255, 1);
-    --color03: rgba(89, 89, 89, 1);
-
-
-
+:root {
+  /* Color Section */
+  --color01: rgba(95, 111, 255, 1);
+  --color02: rgba(255, 255, 255, 1);
+  --color03: rgba(89, 89, 89, 1);
+  --color04: rgba(234, 239, 255, 1);
 }
 
-/* Navbar */
+/* ------------------------------------- Home PAGE ------------------------------------ */
 
-.header{
-    justify-content: space-around;
-    align-items: center;
-    width: 1500px;
+/* -------- Navbar -------------- */
+
+.header {
+  justify-content: space-around;
+  align-items: center;
+  width: 1500px;
 }
 .header > img {
-    width: 130px;
-    
+  width: 130px;
 }
-ul{
-    display: grid;
-    grid-template-columns: repeat(4,1fr) ;
-    gap:50px;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    list-style: none;  
-}
-
-/* hero-section */
-
-.hero-section{
-    display:flex ;
-
-    width: 1400px;
-    height: 698PX;
-    background-color: var(--color01) ;
-    border-radius: 12px;
-    margin: auto auto;
-}
-.hero-content{
-    display: grid;
-    padding-top: 160px;
-    padding-left: 93px;
-    grid-template-columns: 140px 400px;
-    grid-template-rows: 300px 90px 80px;
+ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
 }
 
+/* --------hero-section-------- */
 
-.hero-tittle{
-    color: var(--color02);
-    justify-items: center;
-    font-size: 70px;
-    width: 700px;
-    height: 150px;
-    display: grid;
-    grid-column-end: span 2;
-    grid-template-columns: auto 10px;
+.hero-section {
+  display: flex;
+
+  width: 1400px;
+  height: 698px;
+  background-color: var(--color01);
+  border-radius: 12px;
+  margin: auto auto;
+}
+.hero-content {
+  display: grid;
+  padding-top: 160px;
+  padding-left: 93px;
+  grid-template-columns: 140px 400px;
+  grid-template-rows: 300px 90px 80px;
 }
 
-.hero-description{
-    color: var(--color02);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 15px;
-    
-    margin: 10px 0px 0px 0px;
+.hero-tittle {
+  color: var(--color02);
+  justify-items: center;
+  font-size: 70px;
+  width: 700px;
+  height: 150px;
+  display: grid;
+  grid-column-end: span 2;
+  grid-template-columns: auto 10px;
 }
 
-.hero-img{
-    width: 130px;
-    height: 55px;
-}
-.header-image{
-    margin-top: 103px;
+.hero-description {
+  color: var(--color02);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+
+  margin: 10px 0px 0px 0px;
 }
 
-/* Small Card Section  */
-.Speciality-content{
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+.hero-img {
+  width: 130px;
+  height: 55px;
+}
+.header-image {
+  margin-top: 103px;
 }
 
-.all-card{
-    justify-content: space-around;
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
-    
+/* -------Small Card Section -----------*/
+
+.Speciality-content {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
+.all-card {
+  justify-content: space-around;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 64px;
+}
+
+.speciality-section {
+  margin-top: 100px;
+}
+
+/* ---------- Top Doctor Section --------- */
+
+.top-doctor-tittle {
+  text-align: center;
+  margin-top: 40px;
+}
+.top-doctor-description {
+  margin-top: 3px;
+  text-align: center;
+}
+
+.doctor-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-left: 49px;
+  
+}
+.doctor-card {
+  width: 250px;
+  height: 350px;
+  border: 1px solid var(--color03);
+  font-size: small;
+  border-radius: 8px;
+  margin-top: 30px;
+  margin-right: 15px;
+  background-color: var(--color04);
+  box-shadow: 2px 3px 13px var(--color01);
+}
+.doctor-card > img {
+  width: 100%;
+}
+.doctor-card h1 {
+  font-size: 50px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.cards-text{
+    padding-left: 10px;
+    margin-top: 5px;
+
+}
+.cards-tittle{
+    font-size: 22px;
+    font-weight: 300px;
+    margin: 0%;
+}
+.top-doctor-btn{
+   align-items: center;
+   margin-top: 40px;
+   margin-right: auto;
+   margin-left: auto ;
+}
