@@ -88,7 +88,7 @@ ul {
   color: var(--color02);
   justify-items: center;
   font-size: 70px;
-  width: 700px;
+  width: 600px;
   height: 150px;
   display: grid;
   grid-column-end: span 2;
@@ -146,7 +146,6 @@ ul {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
   margin-left: 49px;
-  
 }
 .doctor-card {
   width: 250px;
@@ -168,19 +167,74 @@ ul {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.cards-text{
-    padding-left: 10px;
-    margin-top: 5px;
+.cards-text {
+  padding-left: 10px;
+  margin-top: 5px;
+}
+.cards-tittle {
+  font-size: 22px;
+  font-weight: 300px;
+  margin: 0%;
+}
+.top-doctor-btn {
+  align-items: center;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.card-img {
+  box-shadow: 0px 1px 1px black;
+}
+
+.btn1 {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+}
+
+/* -------------- apt-section----------- */
+
+.apt-section{
+  width: 1300px;
+  height: 433px;
+  margin: 151px auto auto auto;
+  border-radius: 10px;
+  border: 2px solid var(--color01);
+  background-color: var(--color01);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  
+}
+.apt-content{
+  display: grid;
+  grid-template-rows: 250px 40px ;
 
 }
-.cards-tittle{
-    font-size: 22px;
-    font-weight: 300px;
-    margin: 0%;
+
+
+.apt-tittle{
+    font-size: 50px;
+    width: 536px ;
+    height: 170px;
+    font-weight: 700px;
+    margin-top: 92px;
+    margin-left: 104px;
+    color: var(--color02);
+} 
+
+.btn2{
+  margin-left: 100px;
 }
-.top-doctor-btn{
-   align-items: center;
-   margin-top: 40px;
-   margin-right: auto;
-   margin-left: auto ;
+.apt-img{
+  position: relative;
+  top: -117px;
+  width: 500px;
 }
+
+/* ---------- footer --------- */
+
+
+
+
+
+
