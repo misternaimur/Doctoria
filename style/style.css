@@ -54,7 +54,7 @@
 .header > img {
   width: 130px;
 }
-ul {
+.navbar-link {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 50px;
@@ -233,8 +233,32 @@ ul {
 
 /* ---------- footer --------- */
 
+.footer-section{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) ;
+  margin-top: 206px;
+  margin-bottom: 63px;
+  margin-left: 110px;
+  margin-right: 110px;
+  justify-content: center;
+  list-style: none;
+  text-decoration: none;
+  
+  
+}
 
+.footer-logo{
+  width: 300px;
+}
+.footer-content > ul > li {
+  width: 300px;
+  list-style: none;
+  text-decoration: none;
+}
 
-
+.footer-copy{
+  text-align: center;
+  
+}
 
 
