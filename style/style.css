@@ -1,8 +1,4 @@
-/**
- * font
- *
- * @format
- */
+/** @format */
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
@@ -32,6 +28,13 @@
   height: 54px;
   border-radius: 47px;
   border-color: 2px solid var(--color02);
+  text-align: center;
+  justify-content: center;
+}
+
+.btn-color {
+  background-color: var(--color01);
+  color: var(--color02);
 }
 
 :root {
@@ -83,7 +86,9 @@
   grid-template-columns: 140px 400px;
   grid-template-rows: 300px 90px 80px;
 }
-
+.btn0 {
+  color: var(--color01);
+}
 .hero-tittle {
   color: var(--color02);
   justify-items: center;
@@ -190,11 +195,13 @@
   display: flex;
   margin-top: 30px;
   align-items: center;
+  color: var(--color02);
+  background-color: var(--color01);
 }
 
 /* -------------- apt-section----------- */
 
-.apt-section{
+.apt-section {
   width: 1300px;
   height: 433px;
   margin: 151px auto auto auto;
@@ -203,29 +210,27 @@
   background-color: var(--color01);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  
 }
-.apt-content{
+.apt-content {
   display: grid;
-  grid-template-rows: 250px 40px ;
-
+  grid-template-rows: 250px 40px;
 }
 
+.apt-tittle {
+  font-size: 50px;
+  width: 536px;
+  height: 170px;
+  font-weight: 700px;
+  margin-top: 92px;
+  margin-left: 104px;
+  color: var(--color02);
+}
 
-.apt-tittle{
-    font-size: 50px;
-    width: 536px ;
-    height: 170px;
-    font-weight: 700px;
-    margin-top: 92px;
-    margin-left: 104px;
-    color: var(--color02);
-} 
-
-.btn2{
+.btn2 {
   margin-left: 100px;
+  color: var(--color01);
 }
-.apt-img{
+.apt-img {
   position: relative;
   top: -117px;
   width: 500px;
@@ -233,9 +238,9 @@
 
 /* ---------- footer --------- */
 
-.footer-section{
+.footer-section {
   display: grid;
-  grid-template-columns: repeat(3, 1fr) ;
+  grid-template-columns: repeat(3, 1fr);
   margin-top: 150px;
   margin-bottom: 63px;
   margin-left: 110px;
@@ -243,11 +248,9 @@
   justify-content: center;
   list-style: none;
   text-decoration: none;
-  
-  
 }
 
-.footer-logo{
+.footer-logo {
   width: 300px;
 }
 .footer-content > ul > li {
@@ -256,7 +259,7 @@
   text-decoration: none;
 }
 
-.footer-copy{
+.footer-copy {
   text-align: center;
 }
 
@@ -268,5 +271,3 @@
 .footer-content > ul {
   padding: 0%;
 }
-
-
