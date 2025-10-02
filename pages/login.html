@@ -1,11 +1,135 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log-in</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/mobile.css" />
+    <link rel="stylesheet" href="../style/tablet.css" />
+    <title>Login-In</title>
+  </head>
+  <body class="roboto-font">
+    <!-- Navbar -->
+    <nav>
+      <header class="header display-flex roboto-font">
+        <img src="../assets/DOCTORIA.gif" alt="Logo" />
+        <div class="navlink">
+          <ul class="navbar-link">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">ALL DOCTORS</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+        <button type="button" class="btn-primary roboto-font btn-color">
+          Create Account
+        </button>
+      </header>
+    </nav>
+    <hr />
+
+    <main class="fbody">
+      <!-- sign up  -->
+      <div class="form">
+        <div class="tab-group">
+          <button class="tab-btn active" type="button">
+            <a href="#signup">Sign Up</a>
+          </button>
+          <button class="tab-btn" type="button">
+            <a href="#login">Login In</a>
+          </button>
+        </div>
+
+        <div class="tab-content">
+          <!-- Sign Up (default visible) -->
+          <div id="signup" style="display: block">
+            <h1 class="form-tittle">Sign Up For Free</h1>
+            <form action="">
+              <div class="top-row">
+                <div class="fillup-box">
+                  <label>First Name <span class="req">*</span></label>
+                  <input type="text" required autocomplete="off" />
+                </div>
+
+                <div class="fillup-box">
+                  <label>Last Name <span class="req">*</span></label>
+                  <input type="text" required autocomplete="off" />
+                </div>
+              </div>
+              <div class="fillup-box">
+                <label>Email Address <span class="req">*</span></label>
+                <input type="email" required autocomplete="off" />
+              </div>
+
+              <div class="fillup-box">
+                <label>Set A Password <span class="req">*</span></label>
+                <input type="password" required autocomplete="off" />
+              </div>
+
+              <button type="submit" class="tab-sub-button">Get Started</button>
+            </form>
+          </div>
+
+          <!-- Login (hidden by default) -->
+          <div id="login" style="display: none">
+            <h1 class="form-tittle">Welcome Back</h1>
+            <form action="">
+              <div class="fillup-box">
+                <label>Email Address <span class="req">*</span></label>
+                <input type="email" required autocomplete="off" />
+              </div>
+
+              <div class="fillup-box">
+                <label>Password <span class="req">*</span></label>
+                <input type="password" required autocomplete="off" />
+              </div>
+
+              <p class="forgot"><a href="#">Forgot Password?</a></p>
+
+              <button type="submit" class="tab-sub-button">Log In</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+
+
+    <footer>
+      <div class="footer-section roboto-font">
+        <div class="footer-content">
+          <h1>DOCTORIA</h1>
+          <p class="footer-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            quos temporibus illum velit voluptatum possimus corrupti error
+            exercitationem laudantium, quae veniam a deserunt odio impedit,
+            praesentium non ipsam qui sit.
+          </p>
+        </div>
+        <div class="footer-content footer-text">
+          <h1>COMPANY</h1>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact US</a></li>
+            <li><a href="">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-content footer-text">
+          <h1>GET IN TOUCH</h1>
+          <p>01940599789</p>
+          <p>misternaimur@gmail.com</p>
+        </div>
+      </div>
+    </footer>
+    <hr />
+    <p class="footer-copy roboto-font">
+      Copyright &copy; 2025 Naimur Shakib Noman - All Right Reserved
+    </p>
     
-</body>
-</html>
+    <script src="../Js/app.js "></script>
+  </body>
+  </html>

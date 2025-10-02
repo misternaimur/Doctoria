@@ -1,5 +1,6 @@
 /** @format */
 
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 .roboto-font {
@@ -17,7 +18,22 @@
   font-style: initial;
 }
 
+/* Unique Style  */
+a {
+  text-decoration:none;
+  color:var(--color03);
+  transition:.5s ease;
+  &:hover {
+    color: var(--color01);
+  }
+}
+
+
+
+
 /* Share Style */
+
+
 
 .display-flex {
   display: flex;
@@ -37,12 +53,16 @@
   color: var(--color02);
 }
 
+
+
 :root {
   /* Color Section */
   --color01: rgba(95, 111, 255, 1);
   --color02: rgba(255, 255, 255, 1);
   --color03: rgba(89, 89, 89, 1);
   --color04: rgba(234, 239, 255, 1);
+  --color05: rgb(245, 239, 230);
+  --body-bg: rgb(203, 220, 235);
 }
 
 /* ------------------------------------- Home PAGE ------------------------------------ */
@@ -271,3 +291,168 @@
 .footer-content > ul {
   padding: 0%;
 }
+
+
+
+/* ===================== Form Section ====================== */
+.form {
+      background: #ffffff;
+      padding: 40px;
+      max-width: 600px;
+      margin: 60px auto;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Tab buttons */
+    .tab-group {
+      margin-bottom: 30px;
+      display: flex;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #ddd;
+    }
+
+    .tab-btn {
+      flex: 1;
+      padding: 15px;
+      font-size: 18px;
+      cursor: pointer;
+      background: #f4f4f4;
+      border: none;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .tab-btn a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .tab-btn:hover {
+      background-color: var(--color01);
+      color: #fff;
+    }
+
+    .active {
+      background-color: var(--color01);
+      color: #fff;
+    }
+
+    /* Titles */
+    .form-tittle {
+      text-align: center;
+      font-size: 26px;
+      margin-bottom: 20px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    /* Input fields */
+    .fillup-box {
+      position: relative;
+      margin-bottom: 25px;
+    }
+
+    label {
+      position: absolute;
+      left: 15px;
+      top: 12px;
+      font-size: 16px;
+      color: #888;
+      transition: all 0.3s ease;
+      pointer-events: none;
+      background: transparent;
+    }
+
+    .req {
+      color: red;
+    }
+
+    input,
+    textarea {
+      font-size: 16px;
+      display: block;
+      width: 100%;
+      padding: 12px 15px;
+      background: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: none;
+      border-color: var(--color01);
+      box-shadow: 0 0 4px var(--color01);
+    }
+
+    input:focus + label,
+    input:not(:placeholder-shown) + label {
+      top: -8px;
+      left: 10px;
+      font-size: 12px;
+      color: #009688;
+      background: #fff;
+      padding: 0 4px;
+      border-radius: 4px;
+    }
+
+    /* Top-row for first/last name */
+    .top-row::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .top-row > div {
+      float: left;
+      width: 48%;
+      margin-right: 4%;
+    }
+
+    .top-row > div:last-child {
+      margin-right: 0;
+    }
+
+    /* Submit button */
+    .tab-sub-button {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 8px;
+      background-color: var(--color01);
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .tab-sub-button:hover {
+      background-color: rgb(80, 156, 255);
+      transform: translateY(-2px);
+    }
+
+    /* Forgot password */
+    .forgot {
+      margin-top: -10px;
+      text-align: right;
+    }
+
+    .forgot a {
+      color: #009688;
+      font-size: 14px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .forgot a:hover {
+      color: #00796b;
+    }
+
+    /* Hide login by default */
+    #login { display: none; }
