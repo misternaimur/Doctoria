@@ -612,6 +612,7 @@ a {
 }
 
 .about-title {
+  text-align: center;
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: var(--color01);
@@ -672,3 +673,85 @@ a {
 }
 
 
+
+/* ================= Contact Section ================= */
+.contact-section {
+  padding: 100px 120px;
+  background: #f9fbff;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #222;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.contact-title span {
+  color: rgba(95, 111, 255, 1);
+}
+
+/* Layout */
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  gap: 80px;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(95, 111, 255, 0.2);
+}
+
+/* Left Image */
+.contact-image img {
+  width: 420px;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+.contact-image img:hover {
+  transform: scale(1.03);
+}
+
+/* Right Info */
+.contact-info {
+  text-align: left;
+  max-width: 450px;
+}
+
+.contact-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: rgba(95, 111, 255, 1);
+}
+
+.contact-info p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+/* Explore Jobs Button */
+.btn-outline {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 2px solid rgba(95, 111, 255, 1);
+  color: rgba(95, 111, 255, 1);
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 12px;
+}
+.btn-outline:hover {
+  background: rgba(95, 111, 255, 1);
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(95, 111, 255, 0.4);
+  transform: translateY(-2px);
+}
