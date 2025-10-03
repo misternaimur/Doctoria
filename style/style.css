@@ -70,22 +70,29 @@ a {
 /* -------- Navbar -------------- */
 
 .header {
-  justify-content: space-around;
-  align-items: center;
-  width: 1500px;
-}
-.header > img {
-  width: 130px;
-}
-.navbar-link {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 50px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 30px;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
-  text-decoration: none;
+}
+.header img {
+  width: 120px;
+}
+.navbar-link {
+  display: flex;
+  gap: 40px;
   list-style: none;
+}
+.navbar-link li a {
+  font-weight: 500;
+  font-size: 16px;
+  transition: var(--transition);
+}
+.navbar-link li a:hover {
+  color: var(--color01);
 }
 
 /* --------hero-section-------- */
@@ -456,3 +463,212 @@ a {
 
     /* Hide login by default */
     #login { display: none; }
+
+
+
+
+  /* ===================== About US Section ====================== */
+
+/* About Section */
+.about-section {
+  padding: 60px 80px;
+  background: #f9f9f9;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin: 40px auto;
+  max-width: 1200px;
+  font-family: "Roboto", sans-serif;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 70px;
+}
+
+.about-image img {
+  width: 360px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(95, 111, 255, 0.3);
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-title {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: rgba(95, 111, 255, 1);
+  font-weight: bold;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.about-text h2 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: rgba(95, 111, 255, 1);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+/* Why Choose Us */
+.why-choose {
+  text-align: center;
+}
+
+.choose-title {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: rgba(95, 111, 255, 1);
+  font-weight: bold;
+}
+
+.choose-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.choose-box {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(95, 111, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 5px solid rgba(95, 111, 255, 1);
+}
+
+.choose-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(95, 111, 255, 0.25);
+}
+
+.choose-box h3 {
+  color: rgba(95, 111, 255, 1);
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.choose-box p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .about-text {
+    text-align: left;
+  }
+}
+/* About Section */
+.about-section {
+  padding: 60px 80px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.about-image img {
+  width: 350px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--color01);
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-text h2 {
+  margin-top: 20px;
+  color: var(--color01);
+  font-size: 1.6rem;
+}
+
+/* Why Choose Us */
+.why-choose {
+  text-align: center;
+}
+
+.choose-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--color01);
+}
+
+.choose-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.choose-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.choose-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.choose-box h3 {
+  color: var(--color01);
+  margin-bottom: 10px;
+}
+
+.choose-box p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
